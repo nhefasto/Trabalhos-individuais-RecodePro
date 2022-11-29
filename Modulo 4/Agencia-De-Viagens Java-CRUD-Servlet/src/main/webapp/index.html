@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>As melhores promoções de pacotes, hotéis e tudo para sua viagem!</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+        <header class="p-3 bg-transparent text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <a href="index.html"><img src="./Imagens/Logo_projeto_escolar.svg"  width="50" height="50" href="index.html">
+                        </a>   
+                    </a>             
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                        <li><a href="Destino.html" class="nav-link px-2 text-secondary">Destino</a></li>
+                        <li><a href="Promoções.html" class="nav-link px-2 text-secondary">Promoções</a></li>
+                        <li><a href="Contato.html" class="nav-link px-2 text-secondary">Contato</a></li>
+                        <li><a href="#" class="nav-link px-2 text-secondary">Lista de Clientes</a></li>                       
+                    </ul>
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="Pesquisa">
+                        <input type="search" class="form-control form-control-dark text-dark bg-transparent" placeholder="Pesquisa..." aria-label="Search">
+                    </form>                      
+                    <div class="text-end">
+                        <button type="button" class="btn btn-success">Conecte-se</button>
+                        <button type="button" class="btn btn-success">Inscrever-se</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <div class="container">
+	<div class="row">
+		<div class="cold-md-7">
+			<hr>
+			<h3>Cadastro de Clientes</h3>
+			<hr>
+			<form action="CreateAndFind" method="POST">
+				    <div class="form-floating mb-3">
+						<input name="nomeCLIENTE" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
+						<label>Nome completo</label>
+					</div>
+					<div class="form-floating mb-3">
+						<input name="numeroRG" maxlength="11" type="text" class="form-control"> 
+						<label>RG (apenas números)</label>
+					</div>					
+					<div class="form-floating mb-3">
+						<input name="numeroCPF" maxlength="11" type="text" class="form-control"> 
+						<label>CPF (apenas números)</label>
+					</div>
+					<div class="form-floating mb-3">
+						<input name="numeroTELEFONE" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
+						<label>Número do telefone</label>
+					</div>	
+					<div class="form-floating mb-3">
+						<input name="enderecoEMAIL" maxlength="40" type="text" class="form-control" id="floatingInput1"> 
+						<label>E-mail</label>
+					</div>
+					<button class="btn btn-primary" type="submit">Cadastrar
+						Cliente</button>
+					<button class="btn btn-secondary" type="reset">Limpar
+						Formulário</button>
+			</form>
+			<br>
+			<h5><a href="CreateAndFind">Lista de Clientes</a></h5>
+		</div>
+		
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
